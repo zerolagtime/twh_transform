@@ -22,7 +22,7 @@ function processText() {
                     if (currentMonth) {
                         outputElement.textContent += '\n';
                     }
-                    outputElement.textContent += month + '\n';
+                    outputElement.textContent += getFullMonthName(month) + '\n';
                     currentMonth = month;
                 }
                 outputElement.textContent += `${day}\t${recordRows[0]}\n`;
@@ -44,6 +44,34 @@ function processText() {
         dumpRecord(record);
     }
 }
+
+function getFullMonthName(abbreviation) {
+    const months = {
+        "Jan": "January",
+        "Feb": "February",
+        "Mar": "March",
+        "Apr": "April",
+        "May": "May",
+        "Jun": "June",
+        "Jul": "July",
+        "Aug": "August",
+        "Sep": "September",
+        "Oct": "October",
+        "Nov": "November",
+        "Dec": "December"
+    };
+
+    // Convert the abbreviation to uppercase to ensure case-insensitive matching
+    const monthAbbreviation = abbreviation.trim();
+
+    // Check if the abbreviation exists in the months object
+    if (months.hasOwnProperty(monthAbbreviation)) {
+        return months[monthAbbreviation];
+    } else {
+        return "Invalid abbreviation";
+    }
+}
+
 
 document.getElementById('textInput').addEventListener('input', () => {
     document.getElementById('output').textContent = ''; // Clear output on new input
