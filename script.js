@@ -53,9 +53,9 @@ function processText() {
                 daySpan2.setAttribute('class', 'record-event-name');
                 daySpan2.textContent = recordRows[0];
                 eventParagraph.appendChild(daySpan2);
+                eventParagraph.innerHTML += "&nbsp;";
                 const timeSpan = document.createElement('span');
-                timeSpan.setAttribute('class', 'record-event-time');
-                timeSpan.textContent = displayTime;
+                timeSpan.textContent = ` - ${displayTime}`;
                 eventParagraph.appendChild(timeSpan);
                 const blankSpan = document.createElement('span');
                 blankSpan.setAttribute('class','record-event-name-filler');

@@ -96,6 +96,7 @@ pre {
 .record-event {
     display: flex; /* Uses flexbox to align children horizontally */
     align-items: center; /* Vertically centers all items in the line */
+    justify-content: flex-start;
     font-size: 12px; /* Base font size for the paragraph */
     margin-bottom: 0px;
     margin-top: 0px;
@@ -107,12 +108,13 @@ pre {
 }
 
 .record-event-name {
-    flex-grow: 1; /* Allows the event name to take up remaining space */
+    /* flex-grow: 1; /* Allows the event name to take up remaining space */
+    /* margin-right: 16px */
 }
 
 .record-event-time {
-    font-size: 10px; /* Smaller font size than the rest of the text */
-    padding-left: 5px; /* Adds a little space between the name and the time */
+    font-size: smaller; /* Smaller font size than the rest of the text */
+    padding-left: 16px; /* Adds a little space between the name and the time */
 }
 
 .record-month {
