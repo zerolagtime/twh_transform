@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Process Calendar Text</title>
+</head>
+<body>
+    <div id="calendar_tab" class="app">
+        <h2>Tabify Front Page Calendar Notices</h2>
+        <p>Go to the front page of TWH, select the text of the calendar preview
+           and paste it into this box.  Text will look like this
+        </p>
+        <span class="preview">Troop Meeting<br />(May 4 2024 6:00PM)</span>
+        <div class="input_box">
+            <textarea id="textInput" rows="10" cols="50" placeholder="Paste calendar text here..."></textarea>
+        </div>
+        <button onclick="processText()">Process Text</button>
+        <div class="output_box">
+            <p>Output below is tab-separated and ready for pasting into 
+                a publication app.
+            </p>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
