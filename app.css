@@ -32,6 +32,13 @@ p {
     font-family: monospace;
 }
 
+.preview-fancy {
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0px 10px 0px 10px;
+}
 .example {
     display: flex;
     width: 100%;
@@ -144,4 +151,18 @@ pre {
     display: none;
 }
 
-#
+.site-footer {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    text-align: center;
+    font-size: 0.8em;
+    color: #333; /* Dark gray text for better readability */
+    border-top: 1px solid #ccc; /* A subtle top border */
+    position: relative; /* Adjust as needed */
+    bottom: 0;
+    width: 100%;
+}
+
+.site-footer p {
+    margin: 0; /* Removes default paragraph margins */
+}
