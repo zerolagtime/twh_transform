@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Process Calendar Text</title>
+    <link rel="stylesheet" href="app.css">
+    <style></style>
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="calendar_tab" class="app">
         <h2>Tabify Front Page Calendar Notices</h2>
         <p>Go to the front page of TWH, select the text of the calendar preview
-           and paste it into this box.  Text will look like this
+           and paste it into this box.  An example is below.
         </p>
-        <span class="preview">Troop Meeting<br />(May 4 2024 6:00PM)</span>
+        <div class="example">
+            <span class="preview">Troop Meeting<br />(May 4 2024 6:00PM)</span>
+            <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z"/><path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z"/></svg></span>
+            <span class="preview">May<br />4	Troop Meeting</span>
+        </div>
         <div class="input_box">
             <textarea id="textInput" rows="10" cols="50" placeholder="Paste calendar text here..."></textarea>
         </div>
@@ -22,6 +29,6 @@
             <pre id="output"></pre>
         </div>
     </div>
-    <script src="script.js"></script>
+    
 </body>
 </html>

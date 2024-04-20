@@ -1,0 +1,91 @@
+/* General styling for the whole app */
+.app {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Styling the title */
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Paragraph styling */
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Specific styling for the preview area */
+.preview {
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0px 10px 0px 10px;
+    font-family: monospace;
+}
+
+.example {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center; 
+}
+/* Input box styling */
+.input_box textarea {
+    width: 100%; /* Overrides cols attribute for responsive width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Includes padding and border in the width */
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Output box styling */
+.output_box {
+    margin-top: 20px;
+    border: 2px solid #007BFF;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.output_box p {
+    color: #333;
+}
+
+/* Style for the preformatted text */
+pre {
+    white-space: pre-wrap;       /* Wraps text */
+    word-wrap: break-word;       /* Break the word at the edge of the box */
+    overflow-wrap: break-word;   /* Break the word if necessary */
+    color: #333;
+    font-family: monospace;
+}
