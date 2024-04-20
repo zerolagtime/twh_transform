@@ -43,7 +43,7 @@ p {
     align-items: center; 
 }
 /* Input box styling */
-.input_box textarea {
+.input-box textarea {
     width: 100%; /* Overrides cols attribute for responsive width */
     padding: 10px;
     border: 1px solid #ccc;
@@ -68,16 +68,19 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+button:active {
+    background-color: #004187;
+}
 
 /* Output box styling */
-.output_box {
+.output-box {
     margin-top: 20px;
     border: 2px solid #007BFF;
     padding: 10px;
     background-color: #fff;
 }
 
-.output_box p {
+.output-box p {
     color: #333;
 }
 
@@ -89,3 +92,54 @@ pre {
     color: #333;
     font-family: monospace;
 }
+
+.record-event {
+    display: flex; /* Uses flexbox to align children horizontally */
+    align-items: center; /* Vertically centers all items in the line */
+    font-size: 12px; /* Base font size for the paragraph */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.record-event-day {
+    margin-right: 10px; /* Adds space between the day and the event name */
+    font-weight: bold; /* Makes the day stand out */
+}
+
+.record-event-name {
+    flex-grow: 1; /* Allows the event name to take up remaining space */
+}
+
+.record-event-time {
+    font-size: 10px; /* Smaller font size than the rest of the text */
+    padding-left: 5px; /* Adds a little space between the name and the time */
+}
+
+.record-month {
+    font-size: 14px;
+    font-weight: bold ;
+    font-variant: small-caps;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+#copy-button {
+    display: flex; /* Uses flexbox to align children horizontally */
+    align-items: center; /* Vertically centers all items in the line */
+    padding: 5px 5px 5px 5px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(73, 73, 73, var(--tw-bg-opacity));
+}
+#copy-button:hover {
+    background-color: rgba(113, 113, 113, var(--tw-bg-opacity));
+}
+#copy-button:active {
+    background-color: rgba(13, 13, 13, var(--tw-bg-opacity));
+}
+
+.hidden {
+    display: none;
+}
+
+#
